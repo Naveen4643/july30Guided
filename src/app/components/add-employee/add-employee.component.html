@@ -1,0 +1,53 @@
+
+<h2 class="col-sm-3" ><b>Add Employee</b></h2>
+<form #employee ="ngForm" (ngSubmit) = onSubmit()>
+    <div class="row">
+        <div class="col-sm-3">Employee Number</div>
+        <div class="col-sm-6"><input type="text" name="empNo" [(ngModel)]="formModel.empNo"></div>
+    </div>
+    &nbsp;
+    <div class="row">
+      <div class="col-sm-3">Employee Name</div>
+      <div class="col-sm-6"><input type="text" name="eName" [(ngModel)]="formModel.eName"></div>
+  </div>
+  &nbsp;
+  <div class="row">
+    <div class="col-sm-3">Job</div>
+    <div class="col-sm-6"><input type="text" name="job"  [(ngModel)]="formModel.job"></div>
+</div>
+&nbsp;
+<div class="row">
+  <div class="col-sm-3">Hire Date</div>
+  <div class="col-sm-6"><input type="date" name="hireDate" [(ngModel)]="formModel.hireDate"></div>
+</div>
+&nbsp;
+<div class="row">
+  <div class="col-sm-3">Manager Id</div>
+  <div class="col-sm-6"><input type="text" name="managerId"  [(ngModel)]="formModel.managerId"></div>
+</div>
+&nbsp;
+
+<div class="row">
+    <div class="col-sm-3">Salary</div>
+    <div class="col-sm-6"><input type="text" name="salary"  [(ngModel)]="formModel.salary"></div>
+  </div>
+  &nbsp;
+
+  <div class="row">
+    <div class="col-sm-3">Commission</div>
+    <div class="col-sm-6"><input type="text" name="commission"  [(ngModel)]="formModel.commission"></div>
+  </div>
+  &nbsp;
+  <div class="row">
+    <div class="col-sm-3">Dept No</div>
+    <div class="col-sm-6"><input type="number" name="deptNo"  [(ngModel)]="formModel.deptNo"></div>
+  </div>
+  &nbsp;
+<div class="row">
+  <div class="col-sm-3">
+    <input type="submit" name="submit" value="submit" class="btn btn-primary"/>
+  </div>
+
+
+</div>
+</form>
